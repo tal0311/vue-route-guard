@@ -18,7 +18,7 @@ const routes = [
       const user = store.getters.getUser
       if (user.role === "admin" && to.name === "user") {
         console.log(to)
-        to.query = { user }
+        to.query = { ...user }
         next()
       }
     }
