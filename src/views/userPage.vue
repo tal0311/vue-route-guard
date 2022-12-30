@@ -7,6 +7,12 @@
 <script>
 export default {
   name: "user-page",
+  created() {
+    this.user = this.$route.query.user;
+  },
+  data() {
+    user: null;
+  },
 };
 </script>
 
