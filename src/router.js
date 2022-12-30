@@ -17,9 +17,10 @@ const routes = [
     beforeEnter: (to, from, next) => {
       const user = store.getters.getUser
       if (user.role === "admin" && to.name === "user") {
-        console.log(to)
         to.query = { ...user }
         next()
+      } else {
+        next("/")
       }
     }
   }

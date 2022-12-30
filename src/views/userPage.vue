@@ -5,7 +5,7 @@
     </div>
     <div class="info">
       <h3>{{ user.username }}</h3>
-      <p>this user got here from a route guard in the router.js file</p>
+      <p>This user got here from a route guard in the router.js file</p>
     </div>
   </section>
 </template>
